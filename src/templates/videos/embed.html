@@ -1,0 +1,7 @@
+{% if video_id %}
+    <h1>Video id {{ video_id }}</h1>
+    <iframe src="https://player.vimeo.com/video/{{ video_id }}"
+            width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+{% else %}
+    <p>El video llegará pronto</p>
+{% endif %}

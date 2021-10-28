@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% block head_title %}Django Flix{% endblock %}
+    </title>
+</head>
+<body>
+<form method="GET" action="/search/">
+    <input type="text" name='q' placeholder="Buscar Movie o TVShow">
+    <button type="submit">Buscar</button>
+</form>
+    {% block content %}
+    {% endblock content %}
+</body>
+</html>
